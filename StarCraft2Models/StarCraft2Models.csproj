@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/BellumGens/StarCraft2Models</RepositoryUrl>
     <PackageTags>starcraft, starcraft 2, models, starcraft 2 models</PackageTags>
@@ -12,10 +12,19 @@
     <PackageLicenseFile>C:\GitHub\StarCraft2Models\LICENSE</PackageLicenseFile>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <Authors>Konstantin Dinev</Authors>
+    <Version>6.0.0</Version>
+    <PackageIcon>avatar_BG_blood.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="assets\avatar_BG_blood.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

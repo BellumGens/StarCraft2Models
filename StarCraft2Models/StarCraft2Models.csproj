@@ -2,6 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/BellumGens/StarCraft2Models</RepositoryUrl>
+    <PackageTags>starcraft, starcraft 2, models, starcraft 2 models</PackageTags>
+    <Company>Bellum Gens</Company>
+    <PackageProjectUrl>https://bellumgens.com</PackageProjectUrl>
+    <Copyright>2019-2022 Bellum Gens</Copyright>
+    <PackageLicenseFile>C:\GitHub\StarCraft2Models\LICENSE</PackageLicenseFile>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <Authors>Konstantin Dinev</Authors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

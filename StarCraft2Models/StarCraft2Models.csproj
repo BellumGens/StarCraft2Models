@@ -9,11 +9,12 @@
     <Company>Bellum Gens</Company>
     <PackageProjectUrl>https://bellumgens.com</PackageProjectUrl>
     <Copyright>2019-2022 Bellum Gens</Copyright>
-    <PackageLicenseFile>C:\GitHub\StarCraft2Models\LICENSE</PackageLicenseFile>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <Authors>Konstantin Dinev</Authors>
     <Version>6.0.0</Version>
     <PackageIcon>avatar_BG_blood.png</PackageIcon>
+    <Description>.NET models for StarCraft 2 battle.net API entities.</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,7 +25,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="assets\avatar_BG_blood.png">
+    <None Include="assets\avatar_BG_blood.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/BellumGens/StarCraft2Models</RepositoryUrl>
@@ -9,9 +9,9 @@
     <Company>Bellum Gens</Company>
     <PackageProjectUrl>https://bellumgens.com</PackageProjectUrl>
     <Copyright>2019-2022 Bellum Gens</Copyright>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
     <Authors>Konstantin Dinev</Authors>
-    <Version>6.0.0</Version>
+    <Version>7.0.0</Version>
     <PackageIcon>avatar_BG_blood.png</PackageIcon>
     <Description>.NET models for StarCraft 2 battle.net API entities.</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>

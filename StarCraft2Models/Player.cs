@@ -8,7 +8,7 @@
         /// <value>
         /// The player name.
         /// </value>
-        public string Name { get; set; }
+        public string name { get; set; }
 
         /// <summary>
         /// Gets or sets the player profile URL.
@@ -16,7 +16,7 @@
         /// <value>
         /// The player profile URL.
         /// </value>
-        public string ProfileUrl { get; set; }
+        public string profileUrl { get; set; }
 
         /// <summary>
         /// Gets or sets the player avatar URL.
@@ -24,7 +24,7 @@
         /// <value>
         /// The player avatar URL.
         /// </value>
-        public string AvatarUrl { get; set; }
+        public string avatarUrl { get; set; }
 
         /// <summary>
         /// Gets or sets the player profile identifier.
@@ -32,7 +32,7 @@
         /// <value>
         /// The player profile identifier.
         /// </value>
-        public string ProfileId { get; set; }
+        public string profileId { get; set; }
 
         /// <summary>
         /// Gets or sets the player region identifier.
@@ -40,7 +40,7 @@
         /// <value>
         /// The player region identifier.
         /// </value>
-        public int RegionId { get; set; }
+        public int regionId { get; set; }
 
         /// <summary>
         /// Gets or sets the player realm identifier.
@@ -48,6 +48,6 @@
         /// <value>
         /// The player realm identifier.
         /// </value>
-        public int RealmId { get; set; }
+        public int realmId { get; set; }
     }
 }

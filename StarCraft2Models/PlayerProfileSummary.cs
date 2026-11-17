@@ -58,8 +58,20 @@
         /// </value>
         public string decalZerg { get; set; }
 
+        /// <summary>
+        /// Gets or sets the combined swarm level of the three races.
+        /// </summary>
+        /// <value>
+        /// The combined swarm level.
+        /// </value>
         public int totalSwarmLevel { get; set; }
 
+        /// <summary>
+        /// Gets or sets the total achievement points.
+        /// </summary>
+        /// <value>
+        /// The total achievement points.
+        /// </value>
         public int totalAchievementPoints { get; set; }
     }
 }

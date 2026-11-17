@@ -1,5 +1,10 @@
-﻿namespace StarCraft2Models
+﻿using System.Text.Json.Serialization;
+
+namespace StarCraft2Models
 {
+    /// <summary>
+    /// The portrait of a legacy StarCraft II profile, a cell in a sprite sheet rather than an image of its own.
+    /// </summary>
     public class ProfilePortrait
     {
         /// <summary>
@@ -8,6 +13,7 @@
         /// <value>
         /// The x coordinate of the profile portrait.
         /// </value>
+        [JsonPropertyName("x")]
         public int X { get; set; }
 
         /// <summary>
@@ -16,6 +22,7 @@
         /// <value>
         /// The y coordinate of the profile portrait.
         /// </value>
+        [JsonPropertyName("y")]
         public int Y { get; set; }
 
         /// <summary>
@@ -24,6 +31,7 @@
         /// <value>
         /// The width of the profile portrait.
         /// </value>
+        [JsonPropertyName("w")]
         public int W { get; set; }
 
         /// <summary>
@@ -32,6 +40,7 @@
         /// <value>
         /// The height of the profile portrait.
         /// </value>
+        [JsonPropertyName("h")]
         public int H { get; set; }
 
         /// <summary>
@@ -40,6 +49,7 @@
         /// <value>
         /// The offset of the profile portrait.
         /// </value>
+        [JsonPropertyName("offset")]
         public int Offset { get; set; }
 
         /// <summary>
@@ -48,6 +58,7 @@
         /// <value>
         /// The URL of the profile portrait.
         /// </value>
+        [JsonPropertyName("url")]
         public string Url { get; set; }
     }
 }

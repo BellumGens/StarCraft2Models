@@ -2,19 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>net11.0</TargetFramework>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/BellumGens/StarCraft2Models</RepositoryUrl>
-    <PackageTags>starcraft, starcraft 2, models, starcraft 2 models</PackageTags>
-    <Company>Bellum Gens</Company>
-    <PackageProjectUrl>https://bellumgens.com</PackageProjectUrl>
-    <Copyright>2019-2022 Bellum Gens</Copyright>
-    <AssemblyVersion>11.0.0.0</AssemblyVersion>
-    <Authors>Konstantin Dinev</Authors>
-    <Version>11.0.0</Version>
-    <PackageIcon>avatar_BG_blood.png</PackageIcon>
+    <!-- Local default. Releases override this from the git tag, see .github/workflows/publish.yml.
+         AssemblyVersion and FileVersion are intentionally not set so they follow Version. -->
+    <Version>0.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>StarCraft2Models</PackageId>
+    <Product>StarCraft2Models</Product>
+    <Title>StarCraft 2 Models</Title>
     <Description>.NET models for StarCraft 2 battle.net API entities.</Description>
+    <PackageTags>starcraft, starcraft 2, sc2, battle.net, models, starcraft 2 models, sc2 profile</PackageTags>
+    <PackageReleaseNotes>Targets .NET 11. PlayerProfile now maps the whole StarCraft II profile response, adding the ladder snapshot, career, swarm levels, campaign progress, achievement category points, the achievement showcase, earned rewards and earned achievements. Fixes ProfilePortrait, which never deserialized with System.Text.Json because the API sends its fields in lower case.</PackageReleaseNotes>
+    <Authors>Konstantin Dinev</Authors>
+    <Company>Bellum Gens</Company>
+    <Copyright>2019-2026 Bellum Gens</Copyright>
+    <PackageProjectUrl>https://bellumgens.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/BellumGens/StarCraft2Models</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>avatar_BG_blood.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,16 +28,10 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="assets\avatar_BG_blood.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="..\LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

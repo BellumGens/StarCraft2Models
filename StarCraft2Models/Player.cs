@@ -1,5 +1,10 @@
 ﻿namespace StarCraft2Models
 {
+    /// <summary>
+    /// A StarCraft II profile reference. <c>/sc2/player/{accountId}</c> returns an array of these, one per
+    /// region the account has played in, and <c>/sc2/metadata/profile/{regionId}/{realmId}/{profileId}</c>
+    /// returns a single one.
+    /// </summary>
     public class Player
     {
         /// <summary>
